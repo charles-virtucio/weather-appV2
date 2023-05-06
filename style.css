@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  :root {
+    --white: #ffffff;
+    --off-white: #e5e5e5;
+    --transp-white-1: rgba(255, 255, 255, 0.25);
+    --transp-white-2: rgba(255, 255, 255, 0.1);
+    --color-1: #121314;
+    --color-2: #09090a;
+    --shadow: rgba(3, 46, 87, 0.2);
+  }
+  body {
+    height: 100vh;
+    background-color: #093647;
+  }
+  
+  h1 {
+    color: var(--white);
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  #input-container {
+    text-align: center;
+    margin: 20px auto;
+  }
+  #card {
+    align-items: center;
+  }
+
+  input {
+    padding: 10px;
+    margin-right: 10px;
+    width: 300px;
+    background: var(--transp-white-2);
+    color: var(--off-white);
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #0df892;
+    color: var(--color-2);
+    border: none;
+    cursor: pointer;
+  }
+  
+  #weather-container {
+    text-align: center;
+    margin: 20px auto;
+    width: 400px;
+    background: var(--transp-white-2);
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  #weather-container p {
+    margin: 10px 0;
+    font-size: 2em;
+    color: var(--white);
+  }
+
+  .shape {
+    position: absolute;
+    background-color: var(--transp-white-1);
+    backdrop-filter: blur(1.2em);
+    border: 2px solid var(--transp-white-2);
+    border-radius: 50%;
+  }
+  .shape-1 {
+    height: 13em;
+    width: 13em;
+    right: -6.5em;
+    top: 1.8em;
+  }
+  .shape-2 {
+    height: 11em;
+    width: 11em;
+    bottom: -3.7em;
+    left: -2.5em;
+  }
+  @media screen and (max-width: 600px) {
+    #weather-container {
+        padding: 10px;
+    }
+
+	#weather_container {
+		width: 150px;
+		height: 150px;
+	}
+
+	.heading {
+		font-size: 2rem;
+	}
+
+    input[type="text"] {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
